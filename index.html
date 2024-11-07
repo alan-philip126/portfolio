@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alan Philip - Portfolio</title>
+    <style>
+        /* General Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Body Styling */
+        body {
+            font-family: Arial, sans-serif;
+            color: #333;
+            background-color: #f4f4f9;
+        }
+
+        /* Header Section */
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 2rem;
+            background: #2c3e50;
+            color: #fff;
+            position: relative;
+        }
+        header h1 {
+            font-size: 2.5rem;
+        }
+        header p {
+            font-size: 1rem;
+        }
+
+        /* Profile Picture */
+        .profile-pic {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 3px solid #3498db;
+            position: absolute;
+            top: 20px;
+            right: 20px;
+        }
+
+        /* Navigation */
+        nav {
+            text-align: center;
+            margin-top: 1rem;
+        }
+        nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: #3498db;
+            font-weight: bold;
+        }
+
+        /* Main Content */
+        .container {
+            max-width: 900px;
+            margin: 2rem auto;
+            padding: 20px;
+            background: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Section Styling */
+        section {
+            margin-bottom: 2rem;
+        }
+        section h2 {
+            color: #2c3e50;
+            margin-bottom: 1rem;
+            border-bottom: 2px solid #3498db;
+            padding-bottom: 5px;
+        }
+        section p, section ul {
+            line-height: 1.6;
+        }
+
+        /* Skills List */
+        .skills ul {
+            list-style-type: none;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+        .skills li {
+            background: #3498db;
+            color: white;
+            padding: 8px 12px;
+            border-radius: 5px;
+        }
+
+        /* Projects Section */
+        .projects-list {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+        }
+        .project-item {
+            padding: 10px;
+            background: #ecf0f1;
+            border-radius: 5px;
+            border-left: 5px solid #3498db;
+        }
+
+        /* Traits and Hobbies */
+        .traits, .hobbies {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+        .traits span, .hobbies span {
+            background: #3498db;
+            color: white;
+            padding: 8px 12px;
+            border-radius: 5px;
+        }
+
+        /* Contact Section */
+        .contact a {
+            color: #3498db;
+            text-decoration: none;
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 1rem;
+            background: #2c3e50;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <div>
+            <h1>Alan Philip</h1>
+            <p>Computer Science and Design Student</p>
+        </div>
+        <!-- Profile Picture -->
+        <img src="prof.jpg" alt="Alan Philip's Profile Picture" class="profile-pic">
+    </header>
+
+    <!-- Navigation -->
+    <nav>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#traits">Traits</a>
+        <a href="#hobbies">Hobbies</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <!-- Main Container -->
+    <div class="container">
+        <!-- About Me Section -->
+        <section id="about">
+            <h2>About Me</h2>
+            <p>Highly motivated Computer Science and Design student with a passion for innovation. Proficient in cutting-edge technologies and eager to apply my skills in web development to solve complex challenges.</p>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills">
+            <h2>Skills</h2>
+            <ul>
+                <li>C</li>
+                <li>Python</li>
+                <li>Java</li>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+                <li>React JS</li>
+                <li>Angular JS</li>
+                <li>Node JS</li>
+                <li>SQL</li>
+            </ul>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects">
+            <h2>Projects</h2>
+            <div class="projects-list">
+                <div class="project-item">
+                    <h3>Hasta - Mini Project</h3>
+                    <p>Hasta bridges surplus products with NGOs, allowing individuals to share excess items and NGOs to distribute them to those in need.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Personal Traits Section -->
+        <section id="traits">
+            <h2>Personal Traits</h2>
+            <div class="traits">
+                <span>Problem Solving</span>
+                <span>Time Management</span>
+                <span>Team Work</span>
+            </div>
+        </section>
+
+        <!-- Hobbies Section -->
+        <section id="hobbies">
+            <h2>Hobbies</h2>
+            <div class="hobbies">
+                <span>Playing Cricket</span>
+                <span>Swimming</span>
+                <span>Networking with People</span>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact">
+            <h2>Contact</h2>
+            <p>Email: <a href="mailto:alanphilip126@gmail.com">alanphilip126@gmail.com</a></p>
+            <p>Phone: <a href="tel:+917736728611">7736728611</a></p>
+            <p>LinkedIn: <a href="https://www.linkedin.com/in/alanphilip95" target="_blank">Alan Philip</a></p>
+        </section>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Alan Philip</p>
+    </footer>
+</body>
+</html>
